@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package company;
+
+// Enum to represent different employee roles
+enum Role {
+    UNKNOWN = 0;
+    INTERN = 1;
+    ENGINEER = 2;
+    MANAGER = 3;
+    DIRECTOR = 4;
+    EXECUTIVE = 5;
+}
+
+// Nested message to hold employee address details
+message Address {
+    string street = 1;
+    string city = 2;
+    string state = 3;
+    string zip_code = 4;
+    string country = 5;
+}
+
+// Main employee information message
+message Employee {  
+                      
+    string name = 1;                    // Employee's full name
+    Role role = 2;                      // Employee role as an enum
+    float salary = 3;                   // Employee's salary
+    repeated string skills = 4;         // List of skills (vector)
+    Address address = 5;                // Nested structure for address
+    uint32 years_of_experience = 6;     // Years of experience (primitive data type)
+    bool is_full_time = 7;              // Boolean indicating if full-time
+    string message=8;
+}
+
+
+message EmployeeID
+{
+    string id = 1;  // Unique employee ID
+}
