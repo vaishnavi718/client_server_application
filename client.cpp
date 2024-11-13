@@ -28,6 +28,7 @@ void displayEmployeeInfo(const std::string& serialized_response) {
     std::cout << "Employee name: " << emp.name() << std::endl;
     std::cout << "Employee Role: " << emp.role() << std::endl;
     std::cout << "Employee salary: " << emp.salary() << std::endl;
+    std::cout << "Employee yeras of experience: " << emp.years_of_experience() << std::endl;
     std::cout << "Is employee full time: " << emp.is_full_time() << std::endl;
     
     const auto& address = emp.address();

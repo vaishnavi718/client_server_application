@@ -55,5 +55,6 @@ cc_test(
         "@com_google_googletest//:gtest_main",
         ":client_server_app",
         ":utility_headers",
+        ":client_lib",
     ],
 )

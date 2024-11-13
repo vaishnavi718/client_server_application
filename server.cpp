@@ -17,7 +17,7 @@ std::string processRequest(const std::string &serialized_request)
     employee.set_role(static_cast<company::Role>(filled_data.role));
     employee.set_salary(filled_data.salary);
     employee.set_is_full_time(filled_data.is_full_time);
-    
+    employee.set_years_of_experience(filled_data.years_of_experience);
     employee.mutable_address()->set_city(filled_data.address.city);
     employee.mutable_address()->set_country(filled_data.address.country);
     employee.mutable_address()->set_state(filled_data.address.state);
